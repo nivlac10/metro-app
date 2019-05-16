@@ -1,0 +1,89 @@
+<!-- <ion-header no-border>
+  <ion-navbar *navbar hideBackButton="true" color="nav-color">
+    <ion-title text-center>
+      Taxihub
+    </ion-title>
+  </ion-navbar>
+</ion-header> -->
+
+<ion-content padding class="o-scroll">
+   <div class='cont_IMG'>
+    <div *ngIf="!initState" class='center_text' text-center>
+       <h1 class='logo-text1'> <strong>{{settings.appName}}</strong></h1>
+       <p class='logo-text'> <strong>{{lp.translate()[0].fastandconv}}</strong></p>
+      </div>
+
+
+    <!-- <button *ngIf="initState" color='light' ion-button block  (click)="loginViaFacebook()">
+          FACEBOOK
+    </button> -->
+
+  
+      
+  <form  *ngIf="initState" [formGroup]="loginForm" (submit)="loginUser()" novalidate>
+
+      <ion-label color='primary' stacked>{{lp.translate()[0].email}}</ion-label>
+      <ion-input  formControlName="email" type="email" placeholder="username@domain.com" 
+        [class.invalid]="!loginForm.controls.email.valid && loginForm.controls.email.dirty"></ion-input>
+    
+ 
+   
+    
+      <ion-label color='primary' stacked>{{lp.translate()[0].password}}</ion-label>
+      <ion-input  formControlName="password" type="password" placeholder="password" 
+        [class.invalid]="!loginForm.controls.password.valid && loginForm.controls.password.dirty"></ion-input>
+   
+  
+
+   
+    <button ion-button block type="submit" [disabled]="!loginForm.valid">
+        {{lp.translate()[0].login}}
+    </button>
+
+   
+  </form>
+   
+  <div class='cont'>
+    <button *ngIf="initState" color='primary'ion-button block clear (click)="goToSignup()">
+        {{lp.translate()[0].newacc}}
+    </button>
+
+    <button *ngIf="initState" color='primary' ion-button block clear (click)="goToResetPassword()">
+        {{lp.translate()[0].resetpasss}}
+    </button>
+
+</div>
+
+        <!-- Login To App Section Can Be Found Below -->
+
+   <div class='o_section'>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+            <button *ngIf="!initState" color='primary'ion-button block (click)="initState = true">
+                {{lp.translate()[0].login}}
+              </button>
+        </ion-col>
+        <ion-col>
+            <button *ngIf="!initState" color='primary'ion-button block (click)="goToSignup()">
+                {{lp.translate()[0].signup}}
+              </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <!-- <button *ngIf="!initState" color='primary' ion-button block  (click)="loginViaFacebook()">
+        {{lp.translate()[0].facebook}}
+    </button> -->
+
+   </div>
+
+<!--      
+    <div class='terms'>
+        Our Terms And Service
+    </div> -->
+
+  </div>
+</ion-content>

@@ -1,0 +1,30 @@
+page-history {
+  ion-content{
+
+    .drive{
+        color: color($colors, primary, base);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .price{
+      color: green;
+    }
+
+    .date{
+      color: orangered;
+    }
+
+    .destination{
+      color: cadetblue;
+    }
+
+    
+      ion-item{
+        margin-top: 24px;
+       // margin-bottom: 15px;
+        border-bottom: 1px solid color($colors, nav-border-bottom, base) !important;
+    }
+     
+   
+}
+}

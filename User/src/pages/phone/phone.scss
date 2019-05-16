@@ -1,0 +1,56 @@
+page-phone {
+  ion-content{
+    background: linear-gradient(color($colors, toper, base), color($colors, lighters, base), color($colors, doper, base)) , url($myUrl) no-repeat center center fixed;
+    overflow: overflow-y auto;
+    background-size: cover;
+    margin-top: 0% !important;
+    .form {
+      margin-bottom: 26px;
+      height: 200px auto;
+      background: white;
+      padding: 10px;
+      border-radius: $borderRadius;
+      margin-top: 20px;
+      border: 1px solid color($colors, nav-border-bottom, base);
+      button {
+        margin-top: 20px !important;
+        border-radius: $borderRadius;
+      }
+        .stack { text-align: center; font-size: 1em; }
+        .star{  z-index: 3; top: 14.5%; margin-top: 30%;
+         input{
+           width: 40%;
+         }
+       
+        
+        }
+      }
+    
+      p {
+        font-size: 0.8em;
+        color: #4b4b4b;
+        margin: 1px;
+      }
+    
+      ion-label { margin-left: 5px; font-size: 1.4em; }
+    
+      ion-input { padding: 5px; }
+
+      ion-item { padding: 5px; }
+    
+      
+  .invalid {
+    border: 1px solid #FF6153;
+  }
+
+  .error-message .item-inner {
+    border-bottom: 0 !important;
+  }
+    
+      .warn{
+        border-radius: $borderRadius;
+        color: #FF6153;
+      }
+}
+
+}

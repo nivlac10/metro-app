@@ -1,0 +1,27 @@
+<!-- <ion-header no-border>
+    <ion-navbar color="nav-color">
+      <ion-title>
+        Add Your Phone Number
+      </ion-title>
+    </ion-navbar>
+  </ion-header> -->
+  
+  
+  <ion-content class="o-scroll" padding>
+   
+    <div id="recaptcha-container"></div>
+    
+  <div class='form'>
+    <!-- <p padding >Add a Phone Number to continue. </p> -->
+
+    
+      <ion-label class='stack' padding color='primary' stacked>Referal Code</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="eg John Snow" [(ngModel)]="userName" ></ion-input>
+  
+      
+  
+      <button padding ion-button  color="primary" id='mybutton' block (click)='signIn(userName)'>{{lp.translate()[0].submit}}</button>
+     
+     
+  </div>
+</ion-content>

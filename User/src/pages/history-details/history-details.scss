@@ -1,0 +1,38 @@
+page-history-details {
+  
+        ion-card-header {
+          text-align: center;
+        }
+     
+    .drive{
+      color: color($colors, primary, base);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .price{
+    color: green;
+  }
+
+  .date{
+    color: orangered;
+  }
+
+  .destination{
+    color: cadetblue;
+  }
+
+  h3{
+    font-size: 1em;
+  }
+  
+    ion-item{
+      margin-top: 24px;
+     // margin-bottom: 15px;
+      border-bottom: 1px solid color($colors, nav-border-bottom, base) !important;
+  }
+
+
+   
+        
+      
+}

@@ -1,0 +1,35 @@
+page-rate {
+    ul {
+        padding: 0px;
+        color: color($colors, primary, base) !important;
+        &.rating li {
+          padding: 5px 10px !important;
+          background: none;
+          color: color($colors, primary, base) !important;
+       
+          ion-icon {
+            font-size: 50px;
+          }
+        }
+      }
+
+      .reviewspace{
+        margin-top: 30%;
+      }
+
+      form {
+        height: 200px auto;
+        .button{
+          border-radius: $borderRadius;
+        }
+      }
+
+      #myInput {
+        border: 1.5px solid color($colors, primary, base);;
+        border-radius: $borderRadius;
+        height: 70%;
+        margin-left: 0%;
+        margin-bottom: 6%;
+    }
+    
+}

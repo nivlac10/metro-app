@@ -1,0 +1,100 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/v2/theming/
+$font-path: "../assets/fonts";
+
+@import "ionic.globals";
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/v2/theming/overriding-ionic-variables/
+$myUrl: '../assets/img/logo-bg.png';
+$myUrl2: '../assets/img/a-splash-1.png';
+$myUrl3: '../assets/img/car.png';
+$myUrl4: '../assets/img/logo-icon.png';
+$linear: linear-gradient(rgb(63, 132, 252), rgb(63, 252, 180));
+$pool: '../assets/img/rickshaw.png';
+$classic: '../assets/img/executive.png';
+$normal: '../assets/img/standard.png';
+$pin: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMhSURBVGhD7ZbLaxNRFIejoH+BulJELba6UnRdFyalYlKtfWBSXTSPUnAjiAoFKVK1C0kmKW7cuBOfuKpJF1IfFcxMW3Xhzn+gFSw2leZOwLmek5xgmx6bSUydW5gffDT0nnPnm8m9N+Nx48ZN42NNnNljpQPPrYw/VyLwwnp56iANqx2S/y4zAbkSuIkFK92+m8rUDT75SvkycBPPqEzdWGn/EiePwA0sUpm62fw3ABuWk0dweVGZurEyHc24YdfI4yaeCDRRmdrBk0hm/E9xyci0/0fxSN0s8m6cju/C4C5vMDLiC0U/eoPRn0jpc2TkRHBgB5WpGV8o0gMsgbDkgJvJnQzGuqhcrXjPR3tB0qqUZrC8ocg5alMjpWUTzTGyLFC72N7dv5PanQ9I3aqUtMFNanc+8EQ/M4LrApv6E7U7n1qWTxnsoXbnwwnagdqdDydnB2p3PpycHajd+XBydqB258PJ2YHanQ++QsCxOM9JcpRqIz3Urkbw1xjkxitlGcaxltrUiq8v2skIrwZqqFy9+ELhVlZ6FeFWKlcvbcGBFl76D1hD5c5m+IvcntALxzXdjCUNM64Z4sno5JzBSa9kdHJex9piD/SmsoVjOBdNu7FJZcVhTRfXgSmgABJyJZqel219MVYcwTGsWduHc4l3yay4pn0Qh+hyjcmwlFsT06IbpSsvzHE6fJmVR3CM61mLeAt0SSm3kEZ9SU3nD4D4G/4iPGcvDbHyCI5xPX9FN18njPx+0qkt8dl8E8h/Yydeh94rd1h5BMe4nvVAB3QhLftJ6uI9N2E1Lt4YY+URHON6qqEZ5iRp2Q+cFHlusmr0337AyiM4xvVURyyTlv3UuvbLDMYfs/IIjnE91YBv4BVp2Q9t4Jr3QKNBh3uzy3tJq7aMZfP7cP1xE/8P8MmjA+nUFzyLYUN31ruk6gKOT9iDHf/8O1CZsRnRAhNfLd6MLkz24vUAc+GcxbkN0UyX29jcn5HbUoZ5NJk1I/BOcxcEHgFT8PS+wlc/ByILIPYLwc/4v+IYvoYY4mGxxzDD8PcIzkXTunHjpqZ4PL8BxvILnWFiTqAAAAAASUVORK5CYII=';
+$pin2: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAwCAYAAAAGlsrkAAAElklEQVRYR72YXWgcVRTH/2eG3U0ENZVEK+mLIvoSJWRDRfBRJUsyH1kYv+iTD1GLpS3qi2iNaB/E0iba1pIXnyzWtcnOnbTBPJSAHw+2FhGKUCk+tMRsRYibTXYnm9wjs5stm83uzuxm03kICfec/+/+771z5twQAjwjIyOhVCo1wEwvEHGUmR4F0LGRuiglbhDxFSJ1dvfuztmJiYm8nyzVCzBNs2N9nQ8T0X4AnX5ixXH5D6CcikRCY4lE4r9aOTXBmma+QiTHAaUrGHBLVAqgA0JMJarlbwFblqW6rnsaUEaaBFamnezr6z04Ojoqywc2gYvQtQTAwy2ClmQSfX29L5fDN4E1bfgMEb/eYmhJ7qQQyQOlP+6Ai3uKszsELcgSsWXb9neF370f3umVUl7fxkEKOF9eAPhxIcRSAaxpxkdEdCRg9nbDjgiR/Ji84rCwcHs+4HvqSokzRMrXbW3qH5lMJh+JRHqkxD4AbwKI+M1KSnk7k0l3k2EYGjMJvwRA3gIwKIT4vVqsYRhPMvNFQNnjr0Ux0nXzCwBv+QS7gNxbC1rKLcLpsp9zZjrhOf6ZmZ6pB5YS49PTyUP+TgBdN08A8ImVP3qOFwA8VE+UWdnrOJOeE99H1/V+QKkbK6X82wPn/JYmEgndm0gkMr5UAJZltbtufqX+CspsIHA+77bNzMy4rQYHWeqo40xeDQIOttSYD3S4ABwXIvl2EPDQkDmmKDjoE/sDGYb5OTPuFO/qCZxjlv2O41yrJ6jr+lNS4rKiKGEf8HHS9fggIKf93EiJm0TrsVpwDwqoFwHu9tMi4oEGSybnADqtKDi7uNhxratrmXK59R5gfR8zvxHAqTenVDq9uKfwkdB1cxTAh34zbcU4Eb1v21NHC2DLsu7PZt3riqI82ArxWhpSYr69PfSEVxPKG4EXiXBuJ8FEHLdte8pjbGp9DMM8xQyvld2JZ0yI5OGScJVmL/8tgHgrycw4F432vlqz2dvY73A2m7+gKHiuNXA5k06n9bm5ubVyvaoNfSwWuy8cDv/ETD3bhP+Wy608Ozs7u1ypU+cmoT0CwLsPPdAM3GtxVJX6bdu+WS2/7t1J08wYES5UHkK/iUgpJZH6vONMXaoVWxfsJRnG8GfM/I4frGL8EyGSH9TL8QVblhVeXV39tYH9vppOLz5deZgC73F5oGma0bU1+YuiKIqP8zVARv2awi0FpJ5okG6UiI7Z9tS7QbbFd6lLIoODg7tUNXQDwK4awqlIJPRY0N4sMNiD6brpdSHHaoD3C5H8MojbhpbaC9Y07R5m+qvyK+Y1Ce3tBberOwIuwo33iOhoBeCQEMnxoNCGHXsJsZjVparurbJuYzkSCXXX+0dLw5WrlgNNM78hwkveODN95ThTrzXitinHxUM2HAf4fEGAeMC27e/vCti7pmSz7r9EWF1aSnf6VamWLXXxkA1fAuSK49hDjbpteqk33ulRZs46jv3pXQYPWwCtCDHpfTYbfhqqXOXqxetKKDs9ff7PhqmNfuDLAfF4/GFVVVcafX9LGk079spnW1ubm0gk1ptx/D/nYuLPKFnbYgAAAABJRU5ErkJggg==';
+// Named Color Variables
+$buttonRadius: 5px;
+$borderRadius: 5px;
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:     #3a3a3a, //rgb(32, 137, 235),
+  secondary:  rgba(240, 240, 240, 0.92), //rgba(240, 240, 240, 0.92)
+  danger:     #f53d3d,
+  light:      #eeeeee,
+  dark:       rgb(245, 245, 245),
+  doom:       #BBBBBB,
+  nav-border-bottom: rgb(216, 216, 216),
+  nav-color: rgb(255, 255, 255),
+  bar-color: #ffffff,
+  newColor: #1d93ca,
+  deep:    rgba(73, 73, 73, 0.788),
+  gery: rgba(219, 205, 8, 0.91),
+  toper:    rgb(253, 253, 253),
+  doper:    rgba(255, 255, 255, 0.993),
+  lighters: rgb(255, 255, 255),
+  shade_1: rgba(0, 0, 0, 0),
+  shade_2: rgba(0, 0, 0, 0),
+  shade: rgb(56, 56, 56),
+  nav-shadow: rgba(3, 3, 3, 0.253),
+  sidemenu_color: #3a3a3a,
+);
+
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/v2/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";

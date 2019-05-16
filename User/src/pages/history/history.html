@@ -1,0 +1,25 @@
+<ion-header  no-border>
+  <ion-navbar color="nav-color">
+    <ion-title>{{lp.translate()[0].triphistory}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding text-center class='yes-scroll'>
+    <div class='followed-items'>
+  <ion-list text-center>
+      <div >
+    <ion-item  no-lines *ngFor="let event of eventList" (click)="goToEventDetail(event.id)">
+    
+      <h2 text-center class='drive'><strong>{{event?.name}}</strong></h2>
+      
+      <h2 class='price'><strong>{{settings.appcurrency}}{{event?.price}}</strong></h2>
+      <h2 class='date'><strong>{{event?.date}}</strong></h2>
+      <h2 class='location'><strong>{{event?.location}}</strong></h2>
+      <h2 class='destination'><strong>{{event?.destination}}</strong></h2>
+    
+    </ion-item>
+  </div>
+  </ion-list>
+    </div>
+</ion-content>

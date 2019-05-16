@@ -1,0 +1,198 @@
+@font-face {
+  font-family: 'Humanst';
+  src: url('../assets/fonts/roboto-regular.woff2') format('woff2'), url('../assets/fonts/roboto-regular.woff') format('woff'), url('../assets/fonts/roboto-regular.ttf') format('ttf');
+  font-weight: bold;
+  font-style: bold;
+  font-size: 1.3em;
+  color: color($colors, dark, base);
+}
+
+ion-content{
+  font-family: 'Humanst';
+  padding-top: 5% !important;
+  
+ // border-top: 1px solid color($colors, nav-border-bottom, base);
+}
+
+
+.splash{
+  background: url($myUrl) no-repeat;
+  overflow: overflow-y auto;
+  background-size: contain;
+  margin-top: 0%;
+}
+
+
+
+
+ion-navbar{
+font-family: 'Humanst';
+margin-top: 6% !important;
+// border-bottom: 1px solid color($colors, nav-border-bottom, base);
+
+}
+
+
+
+
+.spinners {
+  background: url($myUrl4) no-repeat;
+  background-size: contain;
+  width: 35%;
+  height: 35%;
+  //position: absolute;
+  margin-top: 20px;
+  margin-left: 32%;
+  animation: d-translate 6.2s ease-in-out;
+ // z-index: 1;
+ //opacity: 0;
+}
+
+
+.car {
+  background: url($myUrl3) no-repeat;
+  background-size: contain;
+  width: 35%;
+  height: 35%;
+  opacity: 0;
+  //position: absolute;
+  margin-top: 66.3%;
+  //margin-left: 0%;
+  animation: d-trans 3.5s ease-out;
+ // z-index: 1;
+}
+
+
+@keyframes d-translate {
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes d-trans {
+  10% {
+    margin-left: 0%;
+    opacity: 1;
+  }
+  90% {
+    margin-left: 30%;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 30%;
+    opacity: 0 !important;
+  }
+}
+
+
+
+.whiteFlap{
+  margin-bottom: 26px;
+  height: 200px auto;
+  background: white;
+  padding: 15px;
+  border-radius: $borderRadius;
+  margin-top: 20px;
+  border: 1px solid color($colors, nav-border-bottom, base);
+}
+
+ion-menu{
+  overflow: hidden !important;
+}
+
+
+.no-scroll .scroll-content{
+  overflow: hidden;
+  background: color($colors, nav-color, base); 
+  button{
+    border-radius: $borderRadius;
+}
+}
+
+.yes-scroll{
+  overflow: auto;
+  background: color($colors, nav-color, base); 
+}
+
+.o-scroll{
+  overflow: hidden;
+  
+}
+
+button{
+  box-shadow: none;
+  border-radius: 0px;
+  height: 54px; 
+  font-size: 1.2em;
+}
+.button{
+  box-shadow: none;
+  border-radius: 0px;
+  height: 54px; 
+  font-size: 1.2em;
+}
+
+
+.profile-pic{
+  width: 4em auto;
+  height: 4em auto;
+  border-radius: 50px;
+ }
+
+ ion-input{
+  border-radius: $borderRadius;
+  border: 1px solid color($colors, nav-border-bottom, base);
+  padding: 6px;
+  font-size: 1.3em;
+ }
+
+ ion-searchbar{
+  box-shadow: none;
+  border-radius: $borderRadius;
+ }
+
+ ion-list{
+   border-radius: $borderRadius;
+ }
+  
+ ion-icon{
+   color: color($colors, shade, base); 
+ }
+
+ ion-item{
+  width: auto;
+  height: auto;
+  display: inline-block;
+  text-align: center;
+ }
+
+ ion-spinner{
+  color: color($colors, primary, base); 
+}
+
+ .main{
+  background: color($colors, sidemenu_color, base); 
+  overflow: hidden !important;
+  //border-bottom: 1.5px solid color($colors, nav-border-bottom, base);
+  margin-top: 0%;
+   .top_bar{
+    height: 150px; 
+    border-bottom: 1.5px solid color($colors, sidemenu_color, base); 
+    padding: 0px;
+    background: color($colors, sidemenu_color, base); 
+    color: color($colors, light, base); 
+   }
+   .profile-pic{
+    width: 3em ;
+    height: 3em ;
+    border: 1px solid color($colors, light, base);
+   }
+ }
+
+ #sidebarList{
+  overflow: hidden !important;
+ }

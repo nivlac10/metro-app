@@ -1,0 +1,26 @@
+<ion-header no-border>
+    <ion-title padding></ion-title>
+  </ion-header>
+
+  <ion-content>
+      <ion-toolbar>
+        
+          <ion-searchbar [(ngModel)]="autocomplete.query" [showCancelButton]="true" (ionInput)="updateSearch()" (ionCancel)="dismiss()"></ion-searchbar>
+        </ion-toolbar>
+      <ion-list>
+          <ion-item *ngFor="let item of autocompleteItems" tappable (click)="chooseItem(item)">
+            {{ item }}
+          </ion-item>
+        </ion-list>
+      <button detail-none  [ngStyle]="{'bottom': 0 + 'px'}" icon-start ion-item color="nav-color" (click)="chooseHome()">
+          <ion-icon color='primary' name="ios-home"></ion-icon>
+          <span *ngIf="home">{{Lang[0].homesearch}}</span>
+          <span *ngIf="!home" (click)='gotoSetting()'>{{Lang[0].add}} {{Lang[0].homesearch}}</span>
+        </button>
+        <button detail-none  [ngStyle]="{'bottom': 0 + 'px'}" icon-start ion-item color="nav-color" (click)="chooseWork()">
+            <ion-icon color='primary' name="ios-briefcase"></ion-icon>
+            <span *ngIf="work">{{Lang[0].worksearch}}</span>
+            <span *ngIf="!work"  (click)='gotoSetting()'>{{Lang[0].add}} {{Lang[0].worksearch}}</span>
+          </button>
+  
+  </ion-content>

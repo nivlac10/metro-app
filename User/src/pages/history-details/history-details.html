@@ -1,0 +1,29 @@
+<ion-header no-border>
+  <ion-navbar color="nav-color">
+    <ion-title>{{lp.translate()[0].detailsp}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="scroll">
+  <ion-row padding>
+  </ion-row>
+  <div>
+    <div text-center>
+      <h3 class='name' >{{currentEvent?.name}}</h3>
+      <hr>
+    </div>
+    
+   
+  </div>
+
+  <div id='dvMap' style="width: auto; height: 150px">
+  </div>
+  <div text-center >
+    <h3 class='price'><ion-icon padding color='primary' name="ios-cash"></ion-icon> <strong>{{settings.appcurrency}}{{currentEvent?.price}}</strong></h3>
+    <h3 class='date'><ion-icon padding color='primary' name="ios-calendar-outline"></ion-icon><strong>{{currentEvent?.date}}</strong></h3>
+    <h3 class='location'><ion-icon padding color='primary' name="locate"></ion-icon><strong>{{currentEvent?.location}}</strong></h3>
+    <h3 class='destination'><ion-icon padding color='primary' name="flag"></ion-icon><strong>{{currentEvent?.destination}}</strong></h3>
+</div>
+<div id='dvPanel' style="width: auto; height: 150px"></div>
+    <div id='dvDistance' style="width: auto; height: 150px"></div>
+</ion-content>

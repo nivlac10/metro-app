@@ -1,0 +1,1096 @@
+page-home {
+
+  ion-content{
+    font-family: 'Humanst';
+    margin-top: 0% !important;
+    
+  }
+
+  ion-footer{
+    font-family: 'Humanst';
+    margin-top: 0% !important;
+  }
+
+  .topBar {
+    height: 50px;
+    width: 100%;
+    margin-top: 5%; //change to 10%
+    z-index: 3;
+   // background: linear-gradient(rgba(95, 94, 94, 0.041), rgba(2, 92, 161, 0)38);
+  
+     ion-icon{
+      padding: 5px;
+     }
+    .button-right{
+      float: right;
+
+    }
+  
+    // @media only screen and (min-width: 768px) {
+    //   .button-right{
+    //     float: right;
+    //   }
+    //   }
+
+}
+
+
+  .hidden {
+    animation-direction: alternate;
+    animation-name: wiki;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+
+  }
+ 
+  ion-content {
+     
+
+    @keyframes left_right {
+      0%   {left: 75%;}
+     
+      50% {left: 80%;}
+    
+      100% {left: 75%;}
+  }
+
+  @keyframes wiki {
+    from {
+      opacity: 0;
+    }
+    
+    to {
+      opacity: 1;
+      
+    }
+}
+
+
+@keyframes bump {
+  0%   {top: 100%;}
+
+  // 50% {top: 90%;}
+  
+  100% {top: 85%;}
+}
+
+    
+    
+    [noScroll] {
+      overflow: hidden;
+    }
+
+    .bars{
+     margin-top: 13%;  //change to 13%
+     padding-top: 18px;
+     
+     .poiter{
+      z-index: 5;
+      margin-left: 1%;
+      background: color($colors, bar-color, base);
+      border-left: 1.1px solid color($colors, nav-border-bottom, base);
+      border-right: 1.1px solid color($colors, nav-border-bottom, base);
+      border-top: 1px solid color($colors, nav-border-bottom, base);
+      border-bottom: 1px solid color($colors, nav-border-bottom, base);
+     }
+
+
+     .bars-whereto {
+      height: 60px;
+      width: 90%;
+      background: color($colors, bar-color, base);
+      
+      margin: -12% 0 0 -50px;
+      margin-left: 5%;
+     
+      box-shadow: 0px 0px 5px 0px  color($colors, nav-shadow, base);
+      z-index: 0;
+      animation-name: wiki;
+      animation-duration: 0.7s;
+      // border: 1px solid color($colors, nav-border-bottom, base);
+      border-radius: $buttonRadius;
+      overflow:hidden;
+      line-height:20px;
+      font-size: 1.5em;
+      text-align: left;
+
+    .myText{
+      margin-left: 6%;
+      color: gray;
+    }
+
+       ion-icon{
+         position: absolute;
+        font-size: 0.4em;
+        left: 2%;
+        color: color($colors, primary, base);
+        padding: 5px;
+       }
+
+  }
+
+  .bars-whereto2 {
+    height: 60px;
+    width: 90%;
+    background: color($colors, bar-color, base);
+    
+    margin: -12% 0 0 -50px;
+    margin-left: 5%;
+   
+  //  box-shadow: 0px 0px 5px 0px  color($colors, nav-shadow, base);
+    z-index: 0;
+    animation-name: wiki;
+    animation-duration: 0.7s;
+    border: 1px solid color($colors, danger, base);
+    border-radius: $buttonRadius;
+    overflow:hidden;
+    line-height:20px;
+    font-size: 1.5em;
+    text-align: left;
+
+  .myText{
+    margin-left: 6%;
+    color: gray;
+  }
+
+     ion-icon{
+       position: absolute;
+      font-size: 0.4em;
+      left: 2%;
+      color: color($colors, primary, base);
+      padding: 5px;
+     }
+
+}
+
+
+
+    .bookingSect{
+      background: color($colors, bar-color, base);
+      padding: 2%;
+      height: auto;
+      margin-top: -12% ;
+      //border: 1px solid color($colors, nav-border-bottom, base);
+      box-shadow: 0px 0px 7px 0px  color($colors, nav-shadow, base);
+      // animation-direction: alternate;
+      animation-name: wiki;
+      animation-duration: 0.7s;
+      z-index: 12;
+      
+    .bars-locate {
+      height: 60px;
+      width: 96% ; 
+      background: color($colors,secondary, base);
+      border-left: 1.1px solid color($colors, nav-border-bottom, base);
+      border-right: 1.1px solid color($colors, nav-border-bottom, base);
+      border-top: 1px solid color($colors, nav-border-bottom, base);
+      border-bottom: 1px solid color($colors, nav-border-bottom, base);
+    //  margin: -12% 0 0 -50px;
+      margin-left: 0%;
+      // z-index: 3;
+      // border: 1px solid color($colors, nav-border-bottom, base);
+      border-radius: $buttonRadius;
+      overflow:hidden;
+      // line-height:20px;
+      font-size: 1.1em;
+     
+      float: left ;
+       ion-icon{
+         position: absolute;
+        font-size: 1em;
+        left: 2%;
+        color: color($colors, danger, base);
+        padding: 5px;
+       }
+
+  }
+
+  .bars-locate-pin {
+    width: auto;
+    float: right;
+    margin-top: 2%;
+    background: color($colors, danger, base);
+   // border: 1px solid color($colors, nav-border-bottom, base);
+    border-radius: $buttonRadius;
+    ion-icon{
+      font-size: 1em;
+      margin-left: 2%;
+      color: color($colors, nav-color, base);
+      padding: 5px;
+     }
+  }
+
+  
+  .bars-destinate {
+    height: 60px;
+    width: 96% ;
+    background: color($colors,secondary, base);
+    border-left: 1.1px solid color($colors, nav-border-bottom, base);
+    border-right: 1.1px solid color($colors, nav-border-bottom, base);
+    border-top: 1px solid color($colors, nav-border-bottom, base);
+    border-bottom: 1px solid color($colors, nav-border-bottom, base);
+  //  margin: -12% 0 0 -50px;
+    margin-left: 0%;
+    // z-index: 3;
+    // border: 1px solid color($colors, nav-border-bottom, base);
+    border-radius: $buttonRadius;
+    overflow:hidden;
+    // line-height:20px;
+    font-size: 1.1em;
+    text-align: center;
+   
+    float: left;
+     ion-icon{
+       position: absolute;
+      font-size: 1em;
+      left: 2%;
+      color: color($colors, primary, base);
+      padding: 5px;
+     }
+
+  }
+
+  .bars-destinate-pin {
+    width: auto;
+    float: right;
+    margin-top: 0%;
+    background: color($colors, primary, base);
+   // border: 1px solid color($colors, nav-border-bottom, base);
+    border-radius: $buttonRadius;
+    ion-icon{
+     font-size: 1em;
+     margin-left: 2%;
+     color: color($colors, nav-color, base);
+     padding: 5px;
+    }
+
+  }
+
+
+    }
+
+  }
+
+  .reset {
+    height: 5%;
+    width: 10%;
+    background: color($colors, bar-color, base);
+    position: absolute;
+    margin-left: 85%;
+    top: 12%;
+    margin-top: 0%;
+   
+    z-index: 1;
+    border: 1px solid color($colors, nav-border-bottom, base);
+    border-radius: $buttonRadius;
+    font-size: 1.5em;
+    text-align: center;
+
+    ion-icon{
+      margin-top: 4%;
+    }
+  }
+
+
+  #myCol{
+    width: 0% !important;
+    padding: 0px;
+  }
+
+  #iCol{
+    width: 50% !important;
+    padding: 0px;
+  }
+
+
+  #rides{
+  border-radius: $buttonRadius;
+  z-index: 4;
+  border: 1px solid color($colors, nav-border-bottom, base);
+ // height: 100% !important;
+  //padding: 5px;
+}
+
+#rides_bigger{
+  border-radius: $buttonRadius;
+  z-index: 4;
+  border: 1px solid color($colors, nav-border-bottom, base);
+ height: auto;
+ overflow: visible;
+  
+}
+
+
+  .bars-gps {
+    height: 50px;
+    width: 90%;
+    background: color($colors, secondary, base);
+    position: absolute;
+    margin: -50px 0 0 -50px;
+    margin-left: 5%;
+    top: 20%;
+    z-index: 1;
+    border: 1px solid color($colors, primary, base);
+    overflow:hidden;
+    border-radius: $buttonRadius;
+    line-height:50px;
+    font-size: 1.2em;
+    text-align: center;
+    color: color($colors, primary, base);
+  }
+
+  .bars-position {
+    height: 50px;
+    width: 20%;
+    background: color($colors, secondary, base);
+    margin: -50px 0 0 -50px;
+    margin-left: 5%;
+    top: 20%;
+    z-index: 1;
+    border: 1px solid color($colors, danger, base);
+    overflow:hidden;
+    border-radius: $buttonRadius;
+    line-height:50px;
+    font-size: 1.2em;
+    text-align: center;
+    color: color($colors, danger, base);
+  }
+
+    // }
+
+    .bar {
+      position: fixed;
+      height: 35px;
+      width: 70%;
+      background: color($colors, primary, base);
+      margin-left: 15%;
+      z-index: 4;
+      top: 30%;
+      margin-top: 85%;
+      border: 1px solid color($colors, nav-border-bottom, base);
+      border-radius: $buttonRadius;
+     
+      font-size: 1.1em;
+      text-align: center;
+    
+      color: white;
+      animation-direction: alternate;
+      animation-name: wiki;
+      animation-duration: 0.7s;
+      animation-iteration-count: 1;
+
+      @media only screen and (min-width: 1024px) {
+        margin-top: 55%;
+        
+        }
+
+      .icon{
+        position: absolute;
+        font-size: 1.6em;
+        right: 2%;
+        padding: 0px;
+        color:  color($colors, light, base);
+        animation-name: left_right;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        display: inline;
+      }
+
+      .textleft{
+        float: left;
+        border: 1.4px solid color($colors, light, base);
+        padding: 9px;
+        z-index: 3;
+        border-radius: $buttonRadius;
+        font-size: 0.9em;
+      }
+      
+      
+  }
+
+    .centerMarker {
+      z-index: 1;
+      margin-top: 37% !important;
+     
+      .middy{
+        position: absolute;
+        left: 45%;
+        margin-left: 5%;
+        background: color($colors, shade, base);
+        height: 30px;
+        top: 0%;
+        margin-top: 0%;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        width: 0.65%;
+      
+        // @media only screen and (min-width: 1024px) {
+        //   margin-top: 60%;
+        //   }
+      
+
+     
+    }
+
+
+  
+     
+  }
+
+  #nugget{
+    position: fixed;
+    z-index: 2;
+    background: color($colors, primary, base);
+    height: 15px;
+    width: 4%;
+    left: 45%;
+    margin-left: 3.4%;
+    margin-top: -4% !important;
+    // top: 30% !important;
+    border-radius: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+  #nugget{
+    position: fixed;
+    z-index: 2;
+    background: color($colors, primary, base);
+    height: 15px;
+    width: 4%;
+    left: 45%;
+    margin-left: 3.4%;
+    margin-top: -1% !important;
+    // top: 30% !important;
+    border-radius: 50px;
+}
+
+  }
+
+
+
+
+    
+ 
+    #hider{
+      margin-left: 73%;
+      top: 3%;
+      .hutton{
+        padding: auto;
+        border-radius: 40px;
+        width: 57%;
+        box-shadow: 0px 0px 7px 0px  color($colors, nav-shadow, base);
+        ion-icon{
+          margin-left: 5% !important;
+        }
+      }
+    }
+    
+    
+    
+           .scroll {
+             height: 100%
+           }
+      
+           #map {
+             width: 100%;
+             height: 100%;
+             position: fixed;
+           }
+   
+         
+   
+
+    .bottom-bar {
+      height: auto;
+      width: 100%;
+      background: #FFFFFF;
+      position: absolute;
+      // top: 65%;
+      margin: -50px 0 0 -50px;
+      margin-left: 0%;
+      bottom: 0%;
+      z-index: 1;
+      
+      //border: 1px solid color($colors, nav-border-bottom, base);
+      box-shadow: 0px -1px 7px 0px color($colors, nav-shadow, base);
+      animation-direction: alternate;
+      animation-name: wiki;
+      animation-duration: 0.7s;
+      animation-iteration-count: 1;
+
+      
+      
+  // .bottom-list{
+  //   margin-top: 90%;
+  //   overflow-x: auto;
+  //    .my-grid{
+  //     width: auto;
+      
+      .carMarker{
+        background: url($normal) no-repeat;
+        height: 60px;
+        margin-left: 35%;
+        padding: 0%;
+        width: 43%;
+        z-index: 1;
+        top: 0px;
+        vertical-align: middle;
+        border-radius: 6px;
+        font-size: 1em;
+        text-align: center;
+       // border: 1px solid color($colors, primary, base);
+        background-position: center;
+        //box-shadow: 0px -1px 5px 0px color($colors, nav-shadow, base);
+        //color: color($colors, primary, base);;
+        h2{
+          border-radius: 30px;
+         // background: color($colors, primary, base);
+          margin: 2%;
+          padding: 6% !important;
+          font-size: 1.4em;
+        }
+        
+        .itemPics{
+          width: 100%;
+        }
+       
+      }
+
+
+      .carMarker_1{
+        background: url($pool) no-repeat;
+        height: 60px;
+        margin-left: 35%;
+        padding: 0%;
+        width: 43%;
+        z-index: 1;
+        top: 0px;
+        vertical-align: middle;
+        border-radius: 6px;
+        font-size: 1em;
+        text-align: center;
+       // border: 1px solid color($colors, primary, base);
+        background-position: center;
+
+        h2{
+          border-radius: 30px;
+         // background: color($colors, primary, base);
+          margin: 2%;
+          
+          padding: 6% !important;      
+              font-size: 1.4em;
+        }
+        //color: color($colors, primary, base);;
+        
+        .itemPics{
+          width: 100%;
+        }
+       
+      }
+
+      .carMarker_2{
+        background: url($classic) no-repeat;
+        height: 60px;
+        margin-left: 30%;
+        padding: 0%;
+        width: 43%;
+        z-index: 1;
+        top: 0px;
+        background-position: center;
+        vertical-align: middle;
+        border-radius: 6px;
+        font-size: 1em;
+        text-align: center;
+       // border: 1px solid color($colors, primary, base);
+       // box-shadow: 0px -1px 5px 0px color($colors, nav-shadow, base);
+        h2{
+          border-radius: 30px;
+         // background: color($colors, primary, base);
+          margin: 2%;
+          
+          padding: 6% !important;      
+              font-size: 1.4em;
+        }
+        //color: color($colors, primary, base);;
+        
+        .itemPics{
+          width: 100%;
+        }
+       
+      }
+     
+      .pricey{
+        border-radius: 30px;
+        background: color($colors, primary, base);
+        margin: 2%;
+        padding: 1%;
+        font-size: 1.2em;
+         width: 33%;
+         color: color($colors, nav-color, base);
+         z-index: 9;
+        border: 1px solid color($colors, primary, base);
+        margin-left: 30%;
+        margin-top: 0%;
+      }
+
+      .topey{
+        border-radius: 30px;
+       // background: color($colors, secondary, base);
+        margin: 2%;
+       // padding: 1%;
+        font-size: 0.9em;
+       // width: 50%;
+        color: color($colors, primary, base);
+       // margin-left: 10%;
+        margin-top: 8%;
+        margin-bottom: 8%;
+        
+      }
+    
+      button {
+ // bottom: -106px;
+        height: 35px;
+        text-align: center;
+      }
+
+      .booker{
+        border-top: 1px solid color($colors, nav-shadow, base);
+       // box-shadow: 0px -1px 4px 0px color($colors, nav-shadow, base);
+        padding-bottom: 2%;
+        overflow: hidden !important;
+      .gutton {
+       //  background: linear-gradient(rgba(1, 17, 41, 0.89), rgba(8, 25, 44, 0.623) rgba(3, 17, 31, 0.438)) , url($myUrl) no-repeat;
+         border-radius: $buttonRadius;
+         height: 55px;
+         width: 96%;
+         margin: 2%;
+         box-shadow: 0px 0px 1px 0px color($colors, nav-shadow, base);
+         //border: 1px solid color($colors, primary, base);
+         //background-position: left;
+         font-size: 1.2em;
+        }
+
+      }
+
+      .text{
+        padding-bottom: 0px;
+       // border: 1px solid color($colors, primary, base);
+        font-size: 1.16em;
+//border-radius: $buttonRadius;
+      }
+
+  
+    }
+
+    #stf{
+      padding:0px;
+      width: auto;
+      font-size: 1em;
+      //margin-left: 30px;
+      //border-radius: $buttonRadius;
+      border-bottom: 1px solid color($colors, nav-border-bottom, base);
+     }
+
+    #myCar{
+      //padding: 0px;
+      
+    }
+
+    #myGrid{
+      overflow-x: auto !important;
+      width: auto !important;
+    }
+
+    #myGrid2{
+      overflow-x: auto !important;
+      width: auto !important;
+    }
+
+
+  #cart-btn {
+    position: relative;
+    background-color: red;
+ }
+ 
+ #cart-badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: red;
+ }
+
+
+
+
+     .bottom-list{
+    margin-top: 90%;
+    overflow-x: auto;
+    animation-name: wiki;
+    animation-duration: 0.7s;
+     .my-grid{
+      width: auto;
+      
+  .stuffs{
+    height: 48.5px;
+    margin-left: 34%;
+    padding: 0%;
+    width: 29.5%;
+    top: 0px;
+    vertical-align: middle;
+    border-radius: $borderRadius;
+    font-size: 1em;
+    text-align: center;
+   // border: 1.2px solid color($colors, light, base);
+    box-shadow: 0px 0px 5px 0px  color($colors, nav-shadow, base);
+    z-index: 3;
+    
+    .itemPics{
+      width: 100%;
+    }
+   
+  }
+     }
+   
+  }
+ 
+
+    .bottom-bar2 {
+      height: auto;
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 0px -1px 7px 0px color($colors, nav-shadow, base);
+      position: absolute;
+      margin: 0px 0 0 0px;
+      margin-left: 0%;
+      top: 75%;
+      padding : 10px;
+      z-index: 1;
+      animation-direction: alternate;
+      animation-name: wiki;
+      animation-duration: 0.7s;
+      animation-iteration-count: 1;
+      button {
+        margin-top: -5% !important;
+        height: 32px;
+        text-align: center;
+      }
+
+      ion-spinner{
+        margin-left: 45%;
+      }
+
+      // ion-title{
+      //   margin-left: 15%;
+      // }
+
+      .gutton {
+      
+        border-radius: $buttonRadius;
+        width: 30%;
+        margin-left: 35%;
+       }
+
+      .text{
+        padding-bottom: 0px;
+        font-size: 1.4em;
+
+       
+      }
+    }
+
+
+  
+    .bottom3-container{
+    
+      background: color($colors, light, base);
+     
+    
+      text-align: center;
+      color: color($colors, deep, base);
+      
+
+    
+   .bottom-bar3 {
+      height: 100px auto;
+      width: 100%;
+      background: rgb(255, 255, 255);
+      position: fixed;
+      margin: 0px 0 0 0px;
+      margin-left: 0%;
+      border-top: 1.2px solid color($colors, nav-shadow, base);
+      //box-shadow: 0px -1px 7px 0px color($colors, nav-shadow, base);
+      bottom: 20%;
+      z-index: 1;
+      //border-radius: $buttonRadius;
+      animation-direction: alternate;
+      animation-name: wiki;
+      animation-duration: 0.7s;
+      animation-iteration-count: 1;
+
+      .myImage{
+       z-index: 0;
+       position: fixed;
+       left:0%;
+       width: 100%;
+       height: 100px;
+       background-color: rgb(235, 66, 0);
+      }
+
+      .profile-pic{
+        width: 5em;
+        height: 5em;
+        border: 1px solid #3E3C3C;
+        border-radius: 50px;
+       }
+
+      
+
+       .logos{
+         padding: 0px;
+         ion-icon{
+          font-size: 1.1em;
+          color: color($colors, primary, base);
+         }
+       }
+    
+    
+      .text{
+        padding: 0px;
+        font-size: 1.4em;
+        margin-top: 6%;
+      }
+
+
+
+      ion-icon{
+        font-size: 2.3em;
+        color: color($colors, primary, base);
+      }
+    }
+    
+
+  }
+}
+
+#butt{
+     color: color($colors, primary, base);
+     margin-top: 8%;
+     margin-bottom: 8%;
+     font-size: 1.3em;
+     padding: 7px;
+ }
+
+ #envelope{
+  height: auto;
+  width: 5em;
+  margin-left: 40%;
+  margin-top: 5%;
+
+}
+
+
+#buttonContainer{
+  float: right;
+   button{
+   //height: 80% !important;
+   background: color($colors, primary, base); 
+   border-radius: $borderRadius;
+   color: color($colors, nav-color, base); 
+   margin: 6px;
+  // border: 6px solid color($colors, nav-color, base);
+   padding: 15px;
+   box-shadow: 0px 0px 7px 0px  color($colors, nav-shadow, base);
+   }
+   
+ 
+ } 
+
+
+#buttonContainer2{
+  float: left;
+  button{
+  //height: 80% !important;
+  background: color($colors, primary, base); 
+  border-radius: $borderRadius;
+  color: color($colors, nav-color, base); 
+  margin: 6px;
+ // border: 6px solid color($colors, nav-color, base);
+  padding: 15px;
+  box-shadow: 0px 0px 7px 0px  color($colors, nav-shadow, base);
+  }
+  
+
+} 
+
+#pay {
+  //  background: linear-gradient(rgba(1, 17, 41, 0.89), rgba(8, 25, 44, 0.623) rgba(3, 17, 31, 0.438)) , url($myUrl) no-repeat;
+    //border-radius: $buttonRadius;
+    width: 100%;
+    height: auto;
+    margin: 1%;
+    margin-left: 2%;
+    font-size: 1.6em;
+    //background: color($colors, nav-color, base) !important;
+   // border: 1px solid color($colors, nav-color, base);
+   // box-shadow: 0px -1px 7px 0px color($colors, nav-shadow, base);
+    padding: 10px;
+
+    ion-badge{
+      height: 70%;
+      font-size: 1.6em;
+    }
+   }
+
+   #pay2 {
+    //  background: linear-gradient(rgba(1, 17, 41, 0.89), rgba(8, 25, 44, 0.623) rgba(3, 17, 31, 0.438)) , url($myUrl) no-repeat;
+      //border-radius: $buttonRadius;
+      width: 100%;
+      height: auto;
+      margin: 1%;
+      margin-left: 2%;
+      //background: color($colors, nav-color, base) !important;
+     // border: 1px solid color($colors, nav-color, base);
+     // box-shadow: 0px -1px 7px 0px color($colors, nav-shadow, base);
+      padding: 4px;
+  
+      ion-badge{
+        height: 70%;
+        font-size: 1.6em;
+      }
+     }
+
+.myCentre{
+  z-index: 3;
+  margin-top: 65%
+}
+
+
+#top-buttons{
+  border-radius: $buttonRadius;
+  //margin-top: 10%;
+  width: 100%;
+  overflow-x: auto;
+  background: color($colors, nav-color, base);
+  position: absolute;
+  margin: 0px 0 0 -50px;
+  margin-left: 0%;
+  bottom: 0%;
+  z-index: 1;
+  //border-top: 1px solid color($colors, nav-border-bottom, base);
+  animation-direction: alternate;
+  animation-name: wiki;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+
+  color: color($colors, primary, base);
+  animation-name: wiki;
+  animation-duration: 0.7s;
+  animation-iteration-count: 1;
+  button{
+    background: color($colors, primary, base);
+    border-radius: $buttonRadius;
+    box-shadow: 0px 1px 2px 0px  color($colors, nav-shadow, base);
+   
+
+  }
+
+  .lowbutton{
+    padding-bottom: 10%;
+  }
+  ion-icon{
+    font-size: 1.6em;
+   // color: color($colors, nav-color, base);
+   
+  }
+}
+
+#header{
+  font-size: 1.32em;
+  font-weight: 200;
+  text-align: center;
+  background: color($colors, primary, base);
+  border-bottom-left-radius: 0px !important;
+  border-bottom-right-radius: 0px !important;
+  color: color($colors, light, base);
+}
+
+#location{
+  text-align: center;
+  padding-left: 17px;
+  overflow:hidden;
+  //width: 40%;
+}
+
+#destination{
+  text-align: center;
+  padding-left: 17px;
+  overflow:hidden;
+ // width: 40%;
+}
+
+
+
+  .locate_button{
+    z-index: 3;
+    float: right;
+    margin-top: 6%;
+    width: auto;
+    height: 40px;
+   // padding: 0px;
+    margin-right: 4.5%;
+    border-radius: 60px;
+    background: white;
+    box-shadow: 0px 0px 4px 0px  color($colors, nav-shadow, base);
+    ion-icon{
+    //  margin-left: auto !important;
+      margin-top: -2%;
+      border-radius: 60px;
+      //padding: auto;
+    }
+  }
+  
+
+  .request-for-ride{
+    margin-top: 0% !important;
+  }
+
+  ion-footer{
+
+    #lower_items{
+      height:auto;
+      width: 100%;
+      background: color($colors, nav-color, base);
+      z-index: 15;
+    }
+    
+    .buttons{
+      margin-top: 10% !important;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      text-align: center;
+      margin-left: 80%;
+      padding: auto !important;
+      background: color($colors, primary, base);
+      z-index: 300 !important;
+      border: 0.7px solid color($colors, primary, base);
+        color: white;
+        font-size: 17px;
+      
+    }
+    #rides{
+      border-radius: 0px;
+      border: 1px solid color($colors, nav-border-bottom, base);
+      ion-badge{
+        font-size: 1.6em
+      }
+    }
+    }
+
+    #price{
+      font-size: 0.8em;
+      font-weight: 500;
+      width: auto;
+    }
+    
+  }
+

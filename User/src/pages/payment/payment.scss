@@ -1,0 +1,18 @@
+page-payment {
+    ion-content{
+
+        ion-item{
+           
+            border-radius: $borderRadius;
+        }
+    }
+
+    #iten{
+        height: 90px;
+        font-size: 1.2em;
+    }
+
+    button{
+        border-radius: $borderRadius;
+    }
+}

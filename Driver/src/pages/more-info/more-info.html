@@ -1,0 +1,188 @@
+<ion-header  no-border>
+  <ion-navbar color="primary">
+    <ion-title>Step 1</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding text-center class='yes-scroll'>
+    <div class='form'>
+
+        <ion-label text-center>
+           Personal Information
+           <hr>
+          </ion-label>
+  
+      <ion-label class='stack' padding color='primary' stacked>{{lp.translate()[0].h2}}</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="eg John Snow" [(ngModel)]="name" ></ion-input>
+
+      <ion-label class='stack' padding color='primary' stacked>{{lp.translate()[0].h10}}</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="eg xxxxxxxxxx" [(ngModel)]="number" ></ion-input>
+
+      <ion-label class='stack' padding color='primary' stacked>{{lp.translate()[0].i1}}</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="eg Some Bank" [(ngModel)]="banks" ></ion-input>
+
+      <ion-label text-center>
+          Car Information
+          <hr>
+        </ion-label>
+
+      <ion-label class='stack' padding color='primary' stacked>License</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="" [(ngModel)]="license" ></ion-input>
+      
+      <ion-label class='stack' padding color='primary' stacked>CarModel</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="" [(ngModel)]="model" ></ion-input>
+
+      <ion-label class='stack' padding color='primary' stacked>CarYear</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="" [(ngModel)]="year" ></ion-input>
+      
+      <ion-label class='stack' padding color='primary' stacked>CarPlate</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="" [(ngModel)]="plate" ></ion-input>
+      
+      <ion-label class='stack' padding color='primary' stacked>CarSeat Number</ion-label>
+      <ion-input class='input' no-lines type="text" placeholder="" [(ngModel)]="seat" ></ion-input>
+     
+  <ion-item padding>
+    <ion-label class='stack' padding  stacked>Car Transmission</ion-label>
+    <ion-select [(ngModel)]="cartransmission" multiple="false">
+     <ion-option data-countryCode="1" value="1" selected>Automatic</ion-option>
+      <ion-option data-countryCode="2" value="2">Manual</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item *ngIf='ph.cars' padding>
+      <ion-label class='stack' padding  stacked>Car Type</ion-label>
+      <ion-select [(ngModel)]="cartypes" multiple="false">
+       <ion-option *ngIf='ph.cars.car_0' data-countryCode="1" value="0" selected>{{ph.cars.car_0}}</ion-option>
+        <ion-option data-countryCode="2" value="1">{{ph.cars.car_1}}</ion-option>
+        <ion-option data-countryCode="3" value="2">{{ph.cars.car_2}}</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item padding>
+      <ion-label class='stack' padding  stacked>Car Inspector</ion-label>
+      <ion-select [(ngModel)]="companies" multiple="false">
+      <div *ngFor='let item of items'>
+       <ion-option value='{{item.id}}'>{{item.id}}</ion-option>
+      </div>
+      </ion-select>
+    </ion-item>
+<!-- 
+  <ion-item padding>
+    <ion-label class='stack' padding  stacked>{{lp.translate()[0].i1}}</ion-label>
+    <ion-select [(ngModel)]="banks" multiple="false">
+     <ion-option data-countryCode="DZ" value="213">Algeria (+213)</ion-option>
+      <ion-option data-countryCode="AR" value="54">Argentina (+54)</ion-option>
+      <ion-option data-countryCode="AU" value="61">Australia (+61)</ion-option>
+      <ion-option data-countryCode="AT" value="43">Austria (+43)</ion-option>
+      <ion-option data-countryCode="AZ" value="994" selected>Azerbaijan (+994)</ion-option>
+    </ion-select>
+  </ion-item> -->
+
+
+  <!-- <ion-item padding >
+      <ion-label class='stack' padding color='primary' stacked>{{lp.translate()[0].h4}}</ion-label>
+      <ion-select [(ngModel)]="cities" multiple="false">
+       <ion-option data-countryCode="1" value="Bakı" selected>Bakı</ion-option>
+        <ion-option data-countryCode="2" value="Ağcabədi">Ağcabədi</ion-option>
+        <ion-option data-countryCode="3" value="Ağdam">Ağdam</ion-option>
+        <ion-option data-countryCode="4" value="Ağdaş">Ağdaş</ion-option>
+        <ion-option data-countryCode="5" value="Ağdərə">Ağdərə</ion-option>
+
+        <ion-option data-countryCode="6" value="Ağstafa">Ağstafa</ion-option>
+        <ion-option data-countryCode="7" value="Ağsu">Ağsu</ion-option>
+        <ion-option data-countryCode="8" value="Astara">Astara</ion-option>
+        <ion-option data-countryCode="9" value="Balakən">Balakən</ion-option>
+        <ion-option data-countryCode="10" value="Beyləqan" >Beyləqan</ion-option>
+
+        <ion-option data-countryCode="11" value="Bərdə">Bərdə</ion-option>
+        <ion-option data-countryCode="12" value="Biləsuvar">Biləsuvar</ion-option>
+        <ion-option data-countryCode="13" value="Cəbrayıl">Cəbrayıl</ion-option>
+        <ion-option data-countryCode="14" value="Cəlilabad">Cəlilabad</ion-option>
+        <ion-option data-countryCode="15" value="Culfa" >Culfa</ion-option>
+
+        <ion-option data-countryCode="16" value="Daşkəsən">Daşkəsən</ion-option>
+        <ion-option data-countryCode="17" value="Dəliməmmədli">Dəliməmmədli</ion-option>
+        <ion-option data-countryCode="18" value="Əsgəran">Əsgəran</ion-option>
+        <ion-option data-countryCode="19" value="Füzuli">Füzuli</ion-option>
+        <ion-option data-countryCode="20" value="Gədəbəy">Gədəbəy</ion-option>
+
+        <ion-option data-countryCode="21" value="Gəncə">Gəncə</ion-option>
+        <ion-option data-countryCode="22" value="Goranboy">Goranboy</ion-option>
+        <ion-option data-countryCode="23" value="Göygöl">Göygöl</ion-option>
+        <ion-option data-countryCode="24" value="Göytəpə">Göytəpə</ion-option>
+        <ion-option data-countryCode="25" value="Hacıqabul" >Hacıqabul</ion-option>
+
+        <ion-option data-countryCode="26" value="Horadiz">Horadiz</ion-option>
+        <ion-option data-countryCode="27" value="Xaçmaz">Xaçmaz</ion-option>
+        <ion-option data-countryCode="28" value="Xankəndi">Xankəndi</ion-option>
+        <ion-option data-countryCode="29" value="Xocalı">Xocalı</ion-option>
+        <ion-option data-countryCode="30" value="Xocavənd">Xocavənd</ion-option>
+
+        <ion-option data-countryCode="31" value="Xırdalan">Xırdalan</ion-option>
+        <ion-option data-countryCode="32" value="Xızı">Xızı</ion-option>
+        <ion-option data-countryCode="33" value="Xudat">Xudat</ion-option>
+        <ion-option data-countryCode="34" value="İmişli">İmişli</ion-option>
+        <ion-option data-countryCode="35" value="İsmayıllı" >İsmayıllı</ion-option>
+
+        <ion-option data-countryCode="36" value="Kəlbəcər">Kəlbəcər</ion-option>
+        <ion-option data-countryCode="37" value="Kürdəmir">Kürdəmir</ion-option>
+        <ion-option data-countryCode="38" value="Qax">Qax</ion-option>
+        <ion-option data-countryCode="39" value="Qazax">Qazax</ion-option>
+        <ion-option data-countryCode="40" value="Qəbələ">Qəbələ</ion-option>
+
+        <ion-option data-countryCode="41" value="Qobustan">Qobustan</ion-option>
+        <ion-option data-countryCode="42" value="Qovlar">Qovlar</ion-option>
+        <ion-option data-countryCode="43" value="Quba">Quba</ion-option>
+        <ion-option data-countryCode="44" value="Qubadlı">Qubadlı</ion-option>
+        <ion-option data-countryCode="45" value="Qusar" >Qusar</ion-option>
+
+        <ion-option data-countryCode="46" value="Laçın">Laçın</ion-option>
+        <ion-option data-countryCode="47" value="Lerik">Lerik</ion-option>
+        <ion-option data-countryCode="48" value="Lənkəran">Lənkəran</ion-option>
+        <ion-option data-countryCode="49" value="Liman">Liman</ion-option>
+        <ion-option data-countryCode="50" value="Masallı" >Masallı</ion-option>
+
+        <ion-option data-countryCode="51" value="Mingəçevir">Mingəçevir</ion-option>
+        <ion-option data-countryCode="52" value="Naftalan">Naftalan</ion-option>
+        <ion-option data-countryCode="53" value="Naxçıvan">Naxçıvan</ion-option>
+        <ion-option data-countryCode="54" value="Neftçala">Neftçala</ion-option>
+        <ion-option data-countryCode="55" value="Oğuz">Oğuz</ion-option>
+
+        <ion-option data-countryCode="56" value="Ordubad">Ordubad</ion-option>
+        <ion-option data-countryCode="57" value="Saatlı">Saatlı</ion-option>
+        <ion-option data-countryCode="58" value="Sabirabad">Sabirabad</ion-option>
+        <ion-option data-countryCode="59" value="Salyan">Salyan</ion-option>
+        <ion-option data-countryCode="60" value="Samux" >Samux</ion-option>
+
+        <ion-option data-countryCode="61" value="Siyəzən">Siyəzən</ion-option>
+        <ion-option data-countryCode="62" value="Sumqayıt">Sumqayıt</ion-option>
+        <ion-option data-countryCode="63" value="Şabran">Şabran</ion-option>
+        <ion-option data-countryCode="64" value="Şahbuz">Şahbuz</ion-option>
+        <ion-option data-countryCode="65" value="Şamaxı" >Şamaxı</ion-option>
+
+        <ion-option data-countryCode="66" value="Şəki">Şəki</ion-option>
+        <ion-option data-countryCode="67" value="Şəmkir">Şəmkir</ion-option>
+        <ion-option data-countryCode="68" value="Şərur">Şərur</ion-option>
+        <ion-option data-countryCode="69" value="Şirvan">Şirvan</ion-option>
+        <ion-option data-countryCode="70" value="Şuşa">Şuşa</ion-option>
+
+        <ion-option data-countryCode="71" value="Tərtər">Tərtər</ion-option>
+        <ion-option data-countryCode="72" value="Tovuz">Tovuz</ion-option>
+        <ion-option data-countryCode="73" value="Ucar">Ucar</ion-option>
+        <ion-option data-countryCode="74" value="Yardımlı">Yardımlı</ion-option>
+        <ion-option data-countryCode="75" value="Yevlax" >Yevlax</ion-option>
+
+        <ion-option data-countryCode="76" value="Zaqatala">Zaqatala</ion-option>
+        <ion-option data-countryCode="77" value="Zəngilan">Zəngilan</ion-option>
+        <ion-option data-countryCode="78" value="Zərdab">Zərdab</ion-option>
+       
+      </ion-select>
+    </ion-item> -->
+   
+
+  <button padding ion-button  color="primary" id='mybutton' block (click)='signIn(userName)'>{{lp.translate()[0].b2}}</button>
+  
+
+    </div>
+
+</ion-content>

@@ -1,0 +1,38 @@
+<!-- <ion-header no-border>
+    <ion-navbar color="nav-color">
+      <ion-title>
+        Add Your Phone Number
+      </ion-title>
+    </ion-navbar>
+  </ion-header> -->
+  
+  
+  <ion-content class="o-scroll" padding>
+   
+      <div id="recaptcha-container"></div>
+      
+    <div class='form'>
+      <!-- <p padding >Add a Phone Number to continue. </p> -->
+
+      
+        <ion-label class='stack' padding color='primary' stacked>Full {{lp.translate()[0].name}}</ion-label>
+        <ion-input class='input' no-lines type="text" placeholder="eg John Snow" [(ngModel)]="userName" ></ion-input>
+    
+
+        <ion-label *ngIf='set.refer' class='stack' padding color='primary' stacked>Referral Code(If any)</ion-label>
+        <ion-input *ngIf='set.refer' class='input' no-lines type="text" placeholder="eg xxxx" [(ngModel)]="userCode" ></ion-input>
+    
+        <ion-label *ngIf='set.refer' class='stack' padding color='primary' stacked>Bank Name</ion-label>
+        <ion-input *ngIf='set.refer' class='input' no-lines type="text" placeholder="eg First bank" [(ngModel)]="userBank" ></ion-input>
+    
+        <ion-label *ngIf='set.refer' class='stack' padding color='primary' stacked>Account Number</ion-label>
+        <ion-input *ngIf='set.refer' class='input' no-lines type="text" placeholder="eg xxxxxxxxxxxxxxx" [(ngModel)]="userAccount" ></ion-input>
+    
+    
+        <button *ngIf='set.refer' padding ion-button  color="primary" id='mybutton' block (click)='signIn(userName, userCode, userBank, userAccount)'>{{lp.translate()[0].submit}}</button>
+       
+        <button *ngIf='!set.refer' padding ion-button  color="primary" id='mybutton' block (click)='signIn(userName)'>{{lp.translate()[0].submit}}</button>
+       
+       
+    </div>
+  </ion-content>
