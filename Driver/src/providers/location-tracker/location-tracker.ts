@@ -85,8 +85,8 @@ export class LocationTrackerProvider {
     let mapOptions: GoogleMapOptions = {
       camera: {
         target: {
-          lat: 5.4966964,
-          lng: 7.5297323
+          lat: 3.1390,
+          lng: 101.6869
         },
         zoom: 5,
         tilt: 0

@@ -114,8 +114,8 @@ export class NativeMapContainerProvider {
   public D_lng: any;
   constructor( private googleMaps: GoogleMaps, public toastCtrl: ToastController, public alert: AlertController,  public settings: SettingsProvider, public zone: NgZone, public myProf: ProfileProvider, public gcode: GeocoderProvider, public platform: Platform) {
     if (!this.platform.is('cordova')){
-    this.lat = 5.4966964;
-    this.lng = 7.5297323;
+    this.lat = 3.1390;
+    this.lng = 101.6869;
     }
   }
 
@@ -127,8 +127,8 @@ export class NativeMapContainerProvider {
     let lat;
     let lng;
     let zoom;
-      lat = 5.4982219
-      lng = 7.5019607
+      lat = 3.1390
+      lng = 101.6869
       zoom = 6
      
     
@@ -255,8 +255,8 @@ export class NativeMapContainerProvider {
 
       
         if (!this.platform.is('cordova')){
-          this.lat = 4.883364;
-          this.lng = 7.025034;
+          this.lat = 3.1391;
+          this.lng = 101.6869;
           //console.log('move ended 2')
         }else{
           if (this.isLocationChange){
@@ -588,7 +588,7 @@ showDriversOnMap()
    let begin = new google.maps.LatLng(element.val().driver_details[0], element.val().driver_details[1])
   
    if (!this.platform.is('cordova')){
-    end = new google.maps.LatLng(5.488334, 7.5190356)
+    end = new google.maps.LatLng(3.1391, 101.6869)
     }else{
     end = new google.maps.LatLng(this.lat, this.lng)
     }
@@ -670,7 +670,7 @@ showDriversOnMap()
       let begin = new google.maps.LatLng(driverSnapshot.val().driver_details[0], driverSnapshot.val().driver_details[1])
      
       if (!this.platform.is('cordova')){
-        end = new google.maps.LatLng(5.488334, 7.5190356)
+        end = new google.maps.LatLng(3.1391, 101.6869)
         }else{
         end = new google.maps.LatLng(this.lat, this.lng)
         }
@@ -785,7 +785,7 @@ let begin = new google.maps.LatLng(element[0], element[1])
 
 
 if (!this.platform.is('cordova')){
-end = new google.maps.LatLng(5.488334, 7.5190356)
+end = new google.maps.LatLng(3.1391, 101.6869)
 }else{
 end = new google.maps.LatLng(this.lat, this.lng);
 }
